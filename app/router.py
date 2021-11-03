@@ -6,3 +6,7 @@ class Router:
         @self.app.route("/")
         def hello_world():
             return "<p>Hello, vladiksdsdsdsddas123123asdasd!</p>"
+
+        @self.app.route("/heh")
+        def hello_world():
+            return "<p>mda</p>"
