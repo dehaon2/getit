@@ -1,11 +1,11 @@
 from flask import Flask, request
 import git
+import router
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, vladiksdsdsdsddas123123asdasd!</p>"
+r = router.Router(app)
+r.routes()
 
 @app.route('/update_server', methods=['POST'])
 def webhook():
